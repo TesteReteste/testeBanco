@@ -57,7 +57,7 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 # Criando o Projeto ASP.NET Core MVC
 
-O .NET Core é um framework livre e de código aberto para os sistemas operacionais Windows, Linux e macOS. É um sucessor de código aberto do .NET Framework. O projeto é desenvolvido principalmente pela Microsoft e lançado com a Licença MIT.
+O .NET Core é um framework livre e de código aberto para os sistemas operacionais Windows, Linux e macOS, ou seja, multiplataforma. É um sucessor de código aberto do .NET Framework. O projeto é desenvolvido principalmente pela Microsoft e lançado com a Licença MIT.
 
 A seguir, estão as versões do framework .NET Core com suas respectivas versões de suportade pelo Visual Studio:
 
@@ -139,6 +139,75 @@ A seguir, estão as versões do framework .NET Core com suas respectivas versõe
 <td></td>
 <td>
 </td></tr></tbody></table>
+
+
+## Criando o modelo
+
+Normalmente, acessamos os dados de um banco de dados pré-existente. Contudo, será feito uma abordagem diferente, criando primeiro o código, conhecido como code first, e em seguida será criado o banco de dados com base nas classes criadas, conhecidas como entidades:
+
+## Conectando o Entity Framework ao Banco de Dados
+
+Agora, será a parte do framework, o Entity Framework Core, criar o banco de dados e gerar tabelas a partir do código criado no passo anterior, além de gerenciar a troca de informação do banco de dados com o sistema.
+
+
+<span data-ttu-id="6437f-104" class="__web-inspector-hide-shortcut__">Versões estáveis</span>
+
+<table class="table"><caption class="visually-hidden">Versões estáveis</caption>
+<thead>
+<tr>
+<th style="text-align: left;"><span data-ttu-id="6437f-105">Versão</span><span class="sxs-lookup"><span data-stu-id="6437f-105">Release</span></span></th>
+<th><span data-ttu-id="6437f-106">Estrutura de destino</span><span class="sxs-lookup"><span data-stu-id="6437f-106">Target framework</span></span></th>
+<th><span data-ttu-id="6437f-107">Com suporte até</span><span class="sxs-lookup"><span data-stu-id="6437f-107">Supported until</span></span></th>
+<th><span data-ttu-id="6437f-108">Links</span><span class="sxs-lookup"><span data-stu-id="6437f-108">Links</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore" data-linktype="external"><span data-ttu-id="6437f-109">EF Core 3.1</span><span class="sxs-lookup"><span data-stu-id="6437f-109">EF Core 3.1</span></span></a></td>
+<td><span data-ttu-id="6437f-110">.NET Standard 2.0</span><span class="sxs-lookup"><span data-stu-id="6437f-110">.NET Standard 2.0</span></span></td>
+<td><span data-ttu-id="6437f-111">3 de dezembro de 2022 (LTS)</span><span class="sxs-lookup"><span data-stu-id="6437f-111">December 3, 2022 (LTS)</span></span></td>
+<td><a href="https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-3-1-and-entity-framework-6-4/" data-linktype="external"><span data-ttu-id="6437f-112">Comunicado</span><span class="sxs-lookup"><span data-stu-id="6437f-112">Announcement</span></span></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span data-ttu-id="6437f-113"><del><a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/3.0.3" data-linktype="external">EF Core 3.0</a></del></span><span class="sxs-lookup"><span data-stu-id="6437f-113"><del><a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/3.0.3" data-linktype="external">EF Core 3.0</a></del></span></span></td>
+<td><span data-ttu-id="6437f-114">.NET Standard 2.1</span><span class="sxs-lookup"><span data-stu-id="6437f-114">.NET Standard 2.1</span></span></td>
+<td><span data-ttu-id="6437f-115">Expirou em 3 de março de 2020</span><span class="sxs-lookup"><span data-stu-id="6437f-115">Expired March 3, 2020</span></span></td>
+<td><span data-ttu-id="6437f-116"><a href="https://devblogs.microsoft.com/dotnet/announcing-ef-core-3-0-and-ef-6-3-general-availability/" data-linktype="external">Comunicado</a> / <a href="ef-core-3.x/breaking-changes" data-linktype="relative-path">Alterações de falha</a></span><span class="sxs-lookup"><span data-stu-id="6437f-116"><a href="https://devblogs.microsoft.com/dotnet/announcing-ef-core-3-0-and-ef-6-3-general-availability/" data-linktype="external">Announcement</a> / <a href="ef-core-3.x/breaking-changes" data-linktype="relative-path">Breaking changes</a></span></span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span data-ttu-id="6437f-117"><del><a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/2.2.6" data-linktype="external">EF Core 2.2</a></del></span><span class="sxs-lookup"><span data-stu-id="6437f-117"><del><a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/2.2.6" data-linktype="external">EF Core 2.2</a></del></span></span></td>
+<td><span data-ttu-id="6437f-118">.NET Standard 2.0</span><span class="sxs-lookup"><span data-stu-id="6437f-118">.NET Standard 2.0</span></span></td>
+<td><span data-ttu-id="6437f-119">Expirado em 23 de dezembro de 2019</span><span class="sxs-lookup"><span data-stu-id="6437f-119">Expired December 23, 2019</span></span></td>
+<td><a href="https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-2-2/" data-linktype="external"><span data-ttu-id="6437f-120">Comunicado</span><span class="sxs-lookup"><span data-stu-id="6437f-120">Announcement</span></span></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/2.1.14" data-linktype="external"><span data-ttu-id="6437f-121">EF Core 2.1</span><span class="sxs-lookup"><span data-stu-id="6437f-121">EF Core 2.1</span></span></a></td>
+<td><span data-ttu-id="6437f-122">.NET Standard 2.0</span><span class="sxs-lookup"><span data-stu-id="6437f-122">.NET Standard 2.0</span></span></td>
+<td><span data-ttu-id="6437f-123">21 de agosto de 2021 (LTS)</span><span class="sxs-lookup"><span data-stu-id="6437f-123">August 21, 2021 (LTS)</span></span></td>
+<td><a href="https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-2-1/" data-linktype="external"><span data-ttu-id="6437f-124">Comunicado</span><span class="sxs-lookup"><span data-stu-id="6437f-124">Announcement</span></span></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span data-ttu-id="6437f-125"><del><a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/2.0.3" data-linktype="external">EF Core 2.0</a></del></span><span class="sxs-lookup"><span data-stu-id="6437f-125"><del><a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/2.0.3" data-linktype="external">EF Core 2.0</a></del></span></span></td>
+<td><span data-ttu-id="6437f-126">.NET Standard 2.0</span><span class="sxs-lookup"><span data-stu-id="6437f-126">.NET Standard 2.0</span></span></td>
+<td><span data-ttu-id="6437f-127">Expirado em 1º de outubro de 2018</span><span class="sxs-lookup"><span data-stu-id="6437f-127">Expired October 1, 2018</span></span></td>
+<td><a href="https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-2-0/" data-linktype="external"><span data-ttu-id="6437f-128">Comunicado</span><span class="sxs-lookup"><span data-stu-id="6437f-128">Announcement</span></span></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span data-ttu-id="6437f-129"><del><a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/1.1.6" data-linktype="external">EF Core 1.1</a></del></span><span class="sxs-lookup"><span data-stu-id="6437f-129"><del><a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/1.1.6" data-linktype="external">EF Core 1.1</a></del></span></span></td>
+<td><span data-ttu-id="6437f-130">.NET Standard 1.3</span><span class="sxs-lookup"><span data-stu-id="6437f-130">.NET Standard 1.3</span></span></td>
+<td><span data-ttu-id="6437f-131">Expirado em 27 de junho de 2019</span><span class="sxs-lookup"><span data-stu-id="6437f-131">Expired June 27 2019</span></span></td>
+<td><a href="https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-1-1/" data-linktype="external"><span data-ttu-id="6437f-132">Comunicado</span><span class="sxs-lookup"><span data-stu-id="6437f-132">Announcement</span></span></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span data-ttu-id="6437f-133"><del><a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/1.0.6" data-linktype="external">EF Core 1.0</a></del></span><span class="sxs-lookup"><span data-stu-id="6437f-133"><del><a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/1.0.6" data-linktype="external">EF Core 1.0</a></del></span></span></td>
+<td><span data-ttu-id="6437f-134">.NET Standard 1.3</span><span class="sxs-lookup"><span data-stu-id="6437f-134">.NET Standard 1.3</span></span></td>
+<td><span data-ttu-id="6437f-135">Expirado em 27 de junho de 2019</span><span class="sxs-lookup"><span data-stu-id="6437f-135">Expired June 27 2019</span></span></td>
+<td><a href="https://devblogs.microsoft.com/dotnet/entity-framework-core-1-0-0-available/" data-linktype="external"><span data-ttu-id="6437f-136">Comunicado</span><span class="sxs-lookup"><span data-stu-id="6437f-136">Announcement</span></span></a></td>
+</tr>
+</tbody>
+</table>
+
+
 
 
 # Como usar
