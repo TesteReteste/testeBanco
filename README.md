@@ -1,8 +1,6 @@
 # testeBanco
 
-
-# WebApiOdata
-Uma WebApi usando ASP.NET Core 3.1 que disponibiliza dados usando OData.
+Um estudo introdutório sobre criação de banco de dados usando Entity Framework e ASP.NET CORE 2.0.
 
 <h4 align="center"> 
   <a href="#sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
