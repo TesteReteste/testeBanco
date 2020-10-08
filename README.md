@@ -208,7 +208,20 @@ Agora, será a parte do framework, o Entity Framework Core, criar o banco de dad
 </table>
 
 
+1 - Instanciar DbContext, que é uma classe do namespace Microsoft.EntityFrameworkCore.
 
+Você pode usar um DbContext associado a um modelo para:
+
+- Escreva e execute consultas
+- Materializar os resultados da consulta como objetos de entidade
+- Rastreie as alterações feitas nesses objetos
+- Persistir mudanças de objetos de volta no banco de dados
+- Vincular objetos na memória aos controles da IU
+
+
+#### Referências:
+[Lançamentos e planejamento do EF Core](https://docs.microsoft.com/pt-br/ef/core/what-is-new/)
+[Trabalhando com DbContext](https://docs.microsoft.com/en-us/ef/ef6/fundamentals/working-with-dbcontext)
 
 # Como usar
 
