@@ -29,7 +29,8 @@ A API fará conexão com um banco de dados, o [SQL Server](https://www.microsoft
 
 # Pré-requisitos
 
-- [Visual Studio 2019](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [Visual Studio 2019](https://visualstudio.microsoft.com/pt-br/downloads/)
+- [ASP.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 - [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) 
 - [Windows](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) 
 
@@ -37,7 +38,7 @@ A API fará conexão com um banco de dados, o [SQL Server](https://www.microsoft
 
 O projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/pt-br/downloads/)
+- [Visual Studio 2019](#vs2019)
 - [Asp.NET Core 3.1](#Pré-requisitos)
 - [SQL Server Management Studio (SSMS)](#Pré-requisitos)
 - [SQL Server](#Pré-requisitos)
