@@ -141,5 +141,9 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 [Em breve...]
 
+# Referências
+
+[https://pt.wikipedia.org/wiki/.NET_Core](https://pt.wikipedia.org/wiki/.NET_Core)
+
 # Licença
 Este projeto está sob a licença do MIT. Consulte a [LICENÇA](https://github.com/TesteReteste/lim/blob/master/LICENSE) para obter mais informações.
