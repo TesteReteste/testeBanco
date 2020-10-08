@@ -37,7 +37,7 @@ A API fará conexão com um banco de dados, o [SQL Server](https://www.microsoft
 
 O projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Visual Studio 2019](#Pré-requisitos)
+- [Visual Studio 2019](https://visualstudio.microsoft.com/pt-br/downloads/)
 - [Asp.NET Core 3.1](#Pré-requisitos)
 - [SQL Server Management Studio (SSMS)](#Pré-requisitos)
 - [SQL Server](#Pré-requisitos)
