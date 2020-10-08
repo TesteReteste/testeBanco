@@ -56,8 +56,9 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 # Criando o Projeto ASP.NET Core MVC
 
-<table class="wikitable">
+O .NET Core é um framework livre e de código aberto para os sistemas operacionais Windows, Linux e macOS. É um sucessor de código aberto do .NET Framework. O projeto é desenvolvido principalmente pela Microsoft e lançado com a Licença MIT.
 
+<table class="wikitable">
 <tbody><tr>
 <th>Versão
 </th>
