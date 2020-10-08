@@ -58,6 +58,8 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 O .NET Core é um framework livre e de código aberto para os sistemas operacionais Windows, Linux e macOS. É um sucessor de código aberto do .NET Framework. O projeto é desenvolvido principalmente pela Microsoft e lançado com a Licença MIT.
 
+A seguir, estão as versões do framework .NET Core com suas respectivas versões de suportade pelo Visual Studio:
+
 <table class="wikitable">
 <tbody><tr>
 <th>Versão
