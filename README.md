@@ -186,7 +186,8 @@ EF WORKFLOWS
 
 
 
-
+#### Referência:
+[https://docs.microsoft.com/en-us/ef/ef6/modeling/](https://docs.microsoft.com/en-us/ef/ef6/modeling/)
 
 
 ## Conectando o Entity Framework ao Banco de Dados
