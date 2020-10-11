@@ -145,6 +145,50 @@ A seguir, estão as versões do framework .NET Core com suas respectivas versõe
 
 Normalmente, acessamos os dados de um banco de dados pré-existente. Contudo, será feito uma abordagem diferente, criando primeiro o código, conhecido como code first, e em seguida será criado o banco de dados com base nas classes criadas, conhecidas como entidades:
 
+Um modelo EF armazena os detalhes sobre como as classes e propriedades do aplicativo são mapeadas para as tabelas e colunas do banco de dados. Existem duas maneiras principais de criar um modelo EF:
+
+Usando o código primeiro : O desenvolvedor escreve o código para especificar o modelo. EF gera os modelos e mapeamentos em tempo de execução com base em classes de entidade e configuração de modelo adicional fornecida pelo desenvolvedor.
+
+Usando o EF Designer : O desenvolvedor desenha caixas e linhas para especificar o modelo usando o EF Designer. O modelo resultante é armazenado como XML em um arquivo com a extensão EDMX. Os objetos de domínio do aplicativo são normalmente gerados automaticamente a partir do modelo conceitual.
+
+
+### EF workflows
+Ambas as abordagens podem ser usadas para direcionar um banco de dados existente ou criar um novo banco de dados, resultando em 4 fluxos de trabalho diferentes. Descubra qual é o melhor para você:
+
+EF WORKFLOWS
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ambas as abordagens podem ser usadas para direcionar um banco de dados existente ou criar um novo banco de dados, resultando em 4 fluxos de trabalho diferentes. </font><font style="vertical-align: inherit;">Descubra qual é o melhor para você:</font></font></p>
+
+<div class="table-scroll-wrapper"><table class="table"><caption class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">EF workflows</font></font></caption>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;" scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eu só quero escrever código ...</font></font></th>
+<th style="text-align: left;" scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eu quero usar um designer ...</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estou criando um novo banco de dados</font></font></th>
+<td style="text-align: left;"><a href="code-first/workflows/new-database" data-linktype="relative-path"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Use </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Code First</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> para definir seu modelo no código e, em seguida, gere um banco de dados.</font></font></a></td>
+<td style="text-align: left;"><a href="designer/workflows/model-first" data-linktype="relative-path"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Use o </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">modelo primeiro</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> para definir seu modelo usando caixas e linhas e, em seguida, gere um banco de dados.</font></font></a></td>
+</tr>
+<tr>
+<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eu preciso acessar um banco de dados existente</font></font></th>
+<td style="text-align: left;"><a href="code-first/workflows/existing-database" data-linktype="relative-path"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Use o </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Code First</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> para criar um modelo baseado em código que mapeia para um banco de dados existente.</font></font></a></td>
+<td style="text-align: left;"><a href="designer/workflows/database-first" data-linktype="relative-path"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Use o </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">banco de dados primeiro</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> para criar um modelo de caixas e linhas que mapeia para um banco de dados existente.</font></font></a></td>
+</tr>
+</tbody>
+</table></div>
+
+
+
+
+
+
+
+
+
 ## Conectando o Entity Framework ao Banco de Dados
 
 Agora, será a parte do framework, o Entity Framework Core, criar o banco de dados e gerar tabelas a partir do código criado no passo anterior, além de gerenciar a troca de informação do banco de dados com o sistema.
@@ -208,20 +252,7 @@ Agora, será a parte do framework, o Entity Framework Core, criar o banco de dad
 </table>
 
 
-1 - Instanciar DbContext, que é uma classe do namespace Microsoft.EntityFrameworkCore.
 
-Você pode usar um DbContext associado a um modelo para:
-
-- Escreva e execute consultas
-- Materializar os resultados da consulta como objetos de entidade
-- Rastreie as alterações feitas nesses objetos
-- Persistir mudanças de objetos de volta no banco de dados
-- Vincular objetos na memória aos controles da IU
-
-
-#### Referências:
-[Lançamentos e planejamento do EF Core](https://docs.microsoft.com/pt-br/ef/core/what-is-new/)
-[Trabalhando com DbContext](https://docs.microsoft.com/en-us/ef/ef6/fundamentals/working-with-dbcontext)
 
 # Como usar
 
