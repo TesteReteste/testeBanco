@@ -182,8 +182,44 @@ EF WORKFLOWS
 </table></div>
 
 
-
-
+#additional-content > div > div.columns.is-multiline > div:nth-child(2) > div > h3
+<ul class="has-line-height-reset has-margin-left-none has-margin-bottom-none has-margin-top-extra-small">
+								<li class="is-unstyled has-margin-bottom-small is-size-small">
+									<a href="core/providers/sql-server/" data-linktype="relative-path">
+										SQL Server
+									</a>
+								</li>
+								<li class="is-unstyled has-margin-bottom-small is-size-small">
+									<a href="core/providers/sqlite/" data-linktype="relative-path">
+										SQLite
+									</a>
+								</li>
+								<li class="is-unstyled has-margin-bottom-small is-size-small">
+									<a href="http://www.npgsql.org/efcore/index.html" data-linktype="external">
+										PostgreSQL
+									</a>
+								</li>
+								<li class="is-unstyled has-margin-bottom-small is-size-small">
+									<a href="https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql" data-linktype="external">
+										MySQL e MariaDB
+									</a>
+								</li>
+								<li class="is-unstyled has-margin-bottom-small is-size-small">
+									<a href="core/providers/cosmos/" data-linktype="relative-path">
+										API do SQL do Cosmos DB
+									</a>
+								</li>
+								<li class="is-unstyled has-margin-bottom-small is-size-small">
+									<a href="core/providers/in-memory/" data-linktype="relative-path">
+										Na memória (teste)
+									</a>
+								</li>
+								<li class="is-unstyled has-margin-bottom-small is-size-small">
+									<a href="core/providers/" data-linktype="relative-path">
+										Todos os Provedores de Banco de Dados
+									</a>
+								</li>
+							</ul>
 
 
 #### Referência:
